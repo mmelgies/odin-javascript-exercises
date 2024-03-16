@@ -1,4 +1,4 @@
-function showMessage(from, text = anotherFunction()) {
+/*function showMessage(from, text = anotherFunction()) {
   alert( from + ": " + text );
 }
 /*
@@ -10,7 +10,7 @@ function anotherFunction(){
 }
 */
 
-function checkAge(age) {
+/*function checkAge(age) {
   if (age >= 18) {
     return true;
   } else {
@@ -25,3 +25,9 @@ if ( checkAge(age) ) {
 } else {
   alert( 'Access denied' );
 }
+*/
+function checkAge(age) {
+  return (age > 18) || confirm('Did parents allow you?');
+}
+
+checkAge(19);
